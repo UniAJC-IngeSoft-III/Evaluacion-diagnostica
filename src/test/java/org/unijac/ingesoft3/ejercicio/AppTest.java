@@ -33,6 +33,11 @@ public class AppTest
      */
     public void testApp()
     {
+        EvaluacionDiagnostica ev = new EvaluacionDiagnostica();
+        assertEquals("Eval (12) = 479001600", "479001600", ev.eval(12).getResultado().toString());
+        assertEquals("Eval (24) = 620448401733239439360000", "620448401733239439360000", ev.eval(24).getResultado().toString());
+        assertEquals("Eval (124) = 7", "7", ev.eval(124).getResultado().toString());
+        assertEquals("Eval (67) = 13", "13", ev.eval(67).getResultado().toString());
         assertTrue( true );
     }
 }
